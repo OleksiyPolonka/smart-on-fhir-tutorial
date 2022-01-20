@@ -3871,7 +3871,6 @@ EventEmitter.prototype.emit = function(type) {
       } else {
         throw TypeError('Uncaught, unspecified "error" event.');
       }
-      return false;
     }
   }
 
@@ -17413,6 +17412,8 @@ console.log('params: ', params);
     sessionStorage[state] = JSON.stringify(params);
 
     console.log("sending client reg", params.client);
+    console.log('client.scope: ', client.scope);
+
 
     var redirect_to=params.provider.oauth2.authorize_uri + "?" + 
       "client_id="+encodeURIComponent(client.client_id)+"&"+
