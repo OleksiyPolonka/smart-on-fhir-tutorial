@@ -17338,6 +17338,8 @@ function bypassOAuth(fhirServiceUrl, callback){
 }
 
 BBClient.authorize = function(params, errback){
+console.log('params: ', params);
+
 
   if (!errback){
     errback = function(){
