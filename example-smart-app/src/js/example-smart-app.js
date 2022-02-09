@@ -69,7 +69,6 @@
 
     FHIR.oauth2.ready(onReady, onError);
     return ret.promise();
-
   };
 
   function defaultPatient(){
@@ -115,6 +114,7 @@
   }
 
   window.drawVisualization = function(p) {
+    console.log('pppppppp', p); 
     $('#holder').show();
     $('#loading').hide();
     $('#fname').html(p.fname);
